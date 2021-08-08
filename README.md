@@ -4,6 +4,6 @@
 
 #### Lista de pendientes:
 
-* [] Definir detalles del proyecto
-* [] Decidir roles del equipo
-* [] Comenzar a trabajar
+* [ ] Definir detalles del proyecto
+* [ ] Decidir roles del equipo
+* [ ] Comenzar a trabajar
