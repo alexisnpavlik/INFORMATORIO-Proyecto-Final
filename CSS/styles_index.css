@@ -22,3 +22,13 @@ h3{
     margin-left: 10px;
     margin-right: 10px;
 }
+.box{
+    margin: 5px;
+    border:solid 1px black;
+    border-radius: 15px;
+}
+
+section{
+    width: 340px;
+    display: inline-flex;
+}
