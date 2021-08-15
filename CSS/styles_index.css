@@ -1,38 +1,64 @@
-*{
-    padding: 0px;
-    margin: 0px;
+
+main{
+	padding: 0 0 0px 0;
+	margin: 0 0 0px 0;
+    background-color:#EFEFEF;
+	
 }
+/*Imagenes*/
+img {
+	padding: 0px 0 0px 0;
+	max-width: 100%;
+	height: auto;
+}
+
+*{
+    padding: 0 0 0 0 ;
+    margin: 0 0 7px 0;
+}
+/*Barra de arriba*/
 header{
     background-color: #d8d8d8;
-    border:solid black 1px;
+    border:solid black 0px;
     display: flex;
     justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
 }
-main{
-    background-color:#eee6e6;
-}
+/*Posicion del titulo*/
 h1{
+	margin: 5px 0 5px 0;
     font-family: segoe UI;
     font-style:normal;
     color:gray;
 }
+/*Posicion del encabezado*/
 h3{
+	padding: 70px 0 30px 0;
     color:grey;
     text-align: center;
 
 }
+
 label{
     margin-left: 10px;
     margin-right: 10px;
 }
+/*Logotipo de Home*/
 #logotipo{
-    margin-top: 5px;
-    margin-left: 10px;
+    margin-top: 15px;
+    margin-left: 20px;
     margin-right: 10px;
 }
+
+/*Caja Gris Login*/
 .box{
-    margin: 5px;
-    border:solid 1px black;
+	padding: 0 0 0px 55px;
+    margin: 0 0 0 20px;
+    border:solid 0px black;
     border-radius: 15px;
     background-color: rgb(204, 204, 204);
     font-family: segoe UI;
@@ -40,9 +66,10 @@ label{
     color:rgb(65, 64, 64);
 
 }
-
+/*Posicion del pie de pagina*/
 .grid{
-    margin: 10px;
+	padding: 0 10px 0 10px;
+    margin: 0px 0 -20px 0;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows:  5fr 1fr;
