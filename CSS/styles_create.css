@@ -1,0 +1,73 @@
+header{
+	background-color: #979797;
+	display: flex;
+    justify-content: space-between;
+	align-items: center;
+}
+body{
+	margin: auto;
+}
+h3{
+	text-align: center;
+}
+
+main{
+	padding: 0 0 90px 0;
+	margin: 0 0 0px 0;
+	background-color: lightgrey;
+	
+}
+
+footer{
+	margin: 0;
+    text-align: center;
+    font-family: segoe UI;
+    font-style:normal;
+	background-color: lightgrey;
+}
+
+
+/*class*/
+.log_info{
+	margin: 0 170px 0 30px;
+}
+.titulo{
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	font-family: segoe UI;
+    font-style:normal;
+    color:#575757;
+}
+.nav_button{
+	padding: 50px 30px 0 0;
+	color:#979797;
+	margin: -30px;
+	display: inline-block;
+	
+}
+.nav_button:hover{
+	color:black;
+}
+.main_caja{
+	display: flex;
+}
+.caja{
+	margin: 0 0px 0px 0;
+	padding: 20px 20px 20px 20px;
+}
+.caja_registro{
+	border-radius: 15px;
+	padding: 20px 20px 20px 20px;
+    margin: 0px 0 0px 0;
+	font-family: segoe UI;
+	font-style:normal;
+	color:#000000;
+	display: grid;
+	background-color: #949494;
+	grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 5fr 1fr;
+    gap: 1em;
+}
+
+/*id*/
