@@ -112,7 +112,9 @@ small .btn.btn-primary {
     border: 2px solid #0630eea8;
     box-shadow: none
 }
-
+.caja{
+    height: 200px
+}
 .username {
     font-size: 14px
 }
@@ -135,3 +137,22 @@ small .btn.btn-primary {
         font-size: 30px
     }
 }
+
+
+
+.btn-primary {
+    background-color: #555;
+    color: #ddd;
+    border: 1px solid #ddd
+}
+
+.btn-primary:hover {
+    background-color: #21bf73;
+    border: 1px solid #21bf73
+}
+
+.btn-success {
+    padding: 5px 25px;
+    background-color: #21bf73
+}
+
