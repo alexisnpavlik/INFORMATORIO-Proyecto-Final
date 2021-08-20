@@ -17,13 +17,13 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #636366;
+    background-color: #C1CFC0;
     padding: 30px 10px
 }
 
 .container {
     max-width: 500px;
-    background-color: #249788;
+    background-color: #297F87;
     margin: auto;
     color: white;
     border-radius: 10px;
@@ -72,7 +72,7 @@ small .btn.btn-primary {
     color: #26D0CE
 }
 
-.create .btn.btn-primary {
+.create .btn.btn-primary { /* boton created */
     width: 100%;
     padding: 0 20px;
     display: block;
@@ -98,9 +98,9 @@ small .btn.btn-primary {
 }
 
 .form-control {
-    color: white;
+    color: rgb(0, 0, 0);
     text-transform: capitalize;
-    background-color: #060672;
+    background-color: #ebebdf;
     border: 2px solid transparent;
     height: 50px;
     padding-left: 20px
@@ -108,8 +108,8 @@ small .btn.btn-primary {
 
 .form-control:focus {
     color: white;
-    background-color: #010152;
-    border: 2px solid #2d4dda;
+    background-color: #49497518;
+    border: 2px solid #0630eea8;
     box-shadow: none
 }
 
