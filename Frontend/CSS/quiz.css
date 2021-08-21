@@ -140,6 +140,15 @@ small .btn.btn-primary {
 
 
 
+.options input[type="radio"]:checked~.checkmark {
+    background: #21bf73;
+    transition: 300ms ease-in-out 0s
+}
+
+.options input[type="radio"]:checked~.checkmark:after {
+    transform: translate(-50%, -50%) scale(1)
+} 
+
 .btn-primary {
     background-color: #555;
     color: #ddd;
