@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif
+}
+
+p {
+    margin: 0px
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #C1CFC0;
+    padding: 30px 10px
+}
+
+.container {
+    max-width: 500px;
+    background-color: #297F87;
+    margin: auto;
+    color: white;
+    border-radius: 10px;
+    position: relative
+}
+
+.text-1 {
+    position: absolute;
+    top: -50px;
+    left: -30%;
+    width: 350px;
+    height: 350px;
+    clip-path: circle(50%);
+    background-color: #2d4dda;
+    z-index: -1
+}
+
+.text-2 {
+    position: absolute;
+    top: -30px;
+    right: -10%;
+    width: 100px;
+    height: 100px;
+    clip-path: circle(50%);
+    background-color: #2d4dda
+}
+
+.text-3 {
+    position: absolute;
+    bottom: -50px;
+    right: -10%;
+    width: 150px;
+    height: 150px;
+    clip-path: circle(50%);
+    background-color: #2d4dda;
+    z-index: -1
+}
+
+.display-7 {
+    font-size: 35px
+}
+
+small .btn.btn-primary {
+    background-color: transparent;
+    border: none;
+    color: #26D0CE
+}
+
+.create .btn.btn-primary { /* boton created */
+    width: 100%;
+    padding: 0 20px;
+    display: block;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    background-image: linear-gradient(to right, #1A2980 0%, #26D0CE 51%, #1A2980 100%);
+    background-size: 200% auto;
+    border: none;
+    text-transform: capitalize;
+    transition: 0.5s
+}
+
+.create .btn.btn-primary:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none
+}
+
+.create .btn.btn-primary:hover .fas {
+    transform: translateX(10px);
+    transition: transform 0.5s ease
+}
+
+.form-control {
+    color: rgb(0, 0, 0);
+    text-transform: capitalize;
+    background-color: #ebebdf;
+    border: 2px solid transparent;
+    height: 50px;
+    padding-left: 20px
+}
+
+.form-control:focus {
+    color: white;
+    background-color: #49497518;
+    border: 2px solid #0630eea8;
+    box-shadow: none
+}
+
+.username {
+    font-size: 14px
+}
+
+::placeholder {
+    font-size: 12px;
+    font-weight: 600
+}
+
+@media(max-width:930px) {
+    .text-1 {
+        display: none
+    }
+
+    .text-2 {
+        z-index: -1
+    }
+
+    .display-7 {
+        font-size: 30px
+    }
+}

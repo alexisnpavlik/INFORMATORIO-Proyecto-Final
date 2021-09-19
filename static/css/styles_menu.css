@@ -1,0 +1,48 @@
+html{
+	font-size: 62.5%;
+	box-sizing: border-box;
+	height: 100%;
+	width: 100%;
+}
+*{
+	padding: 0;
+	margin: 0;
+}
+h1{
+	padding-top: 2vh;
+	text-align: center;
+	font-size: 5rem;
+	padding-bottom: 25vw;
+}
+body{
+	background-color: #C1CFC0;
+	display: block;
+	align-items: center;
+	justify-content: center;
+}
+h2{
+	font-size: 2.6rem;	
+}
+.nav{
+	border:solid black 1px;
+	border-radius: 10px;
+	padding-top: 10px;
+	box-sizing: border-box;
+	width: 100%;
+	background-color: #C1CFC0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0px 0px 90px 10px royalblue ;
+}
+.nav_btn{
+	padding: 10px;
+	display: inline-block;
+	width: 100%;
+	color: black;
+}
+.nav_btn:hover{
+	color: royalblue;
+	text-shadow: 0px 0px 20px royalblue
+	
+}

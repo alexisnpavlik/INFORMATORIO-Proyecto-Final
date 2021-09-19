@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+{% load static%}
+    <html lang="es">
+
+    <head>
+        <title>C H A C O - 70 AÑOS</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="{% static 'img/chaco.png' %}">
+        <link rel="stylesheet" href="{% static 'css/styles_resultados.css' %}">
+        <link rel="canonical" href="/web/tweet-button">
+    </head>
+
+    <header>
+        <center>
+            <ul>
+                <section style="padding-top:10px">
+                    <a href="https://empleo.chaco.gob.ar/informatorio#/"><img src="{% static 'img/infoLogo.svg' %}" width="60vw" alt=""></a>
+                </section>
+                <div style="padding-left: 10px;display:inline-block">
+                    <a href="{% url 'menu' %}">Menu</a>
+                </div>
+                <div style="padding-left: 10px;display:inline-block">
+                    <a href="{% url 'jugar' %}">Jugar</a>
+                </div>
+                <div style="padding-left: 10px;display:inline-block">
+                    <a href="{% url 'nosotros' %}">Nosotros</a>
+                </div>
+                <div style="padding-left: 10px;display:inline-block">
+                    <a href="{% url 'logout' %}">Cerrar sesión</a>
+                </div>
+            </ul>
+        </center>
+    </header>
+    
+    <body class="body" id="body">
+        
+        <section>
+            <h1>Resultados de la trivia</h1>
+        </section>
+            
+        <section class="box">
+            <div class="box_name">
+                <h2>Nombre del participante: {{ request.user }}</h2>
+            </div>
+            <div>
+                <h2>
+                    Respuestas correctas: {{aciertos}} de 4
+                </h2>
+                <h2>
+                    Porcentaje de ascierto: {{porcentaje}}%
+                </h2>
+            </div>
+        </section>
+        <section>
+            
+            
+            <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Compartir</a></div>
+            <div id="fb-root"></div>
+            
+            <div><a class="twitter-share-button" href="https://twitter.com/intent/tweet"> Compartir en Twitter</a></div>
+
+        </section>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v11.0" nonce="ko1Xrcr2"></script>
+    </body>
+
+</html>

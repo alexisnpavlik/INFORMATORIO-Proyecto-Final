@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+{% load static%}
+<html lang="en">
+	<head>
+		
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Inicio Quiz Chaco</title>
+		<link rel="shortcut icon" href="{% static 'img/chaco.png' %}">
+		<link rel="stylesheet" href="{% static 'css/styles_menu.css' %}">
+		
+		
+	</head>
+	<body id="body">
+		<header><h1>Quiz 70 Aniversario Chaco</h1></header>
+		<h2 style="text-align:center">Hola, {{ request.user }}</h2>
+		<main>
+			<article>
+				<div class="nav">
+					<a href="{% url 'nosotros' %}">
+						<div class="nav_btn">
+							<center>
+								<figure>
+									<img src="{% static 'img/nosotros.svg' %}" alt="Logo Nosotros" width="35%">
+								</figure>
+								<h2>Nosotros</h2>
+							</center>
+						</div>
+					</a>
+
+					<a href="{% url 'jugar' %}">
+						<div class="nav_btn">
+							<center>
+								<figure>
+									<img src="{% static 'img/Quiz.svg' %}" alt="Logo Jugar" width="35%">
+								</figure>
+								<h2>Jugar</h2>
+							</center>
+						</div>
+					</a>
+
+					<a href="{% url 'logout' %}">
+						<div class="nav_btn">
+							<center>
+								<figure>
+								  <img src="{% static 'img/close.svg' %}" alt="Cerrar sesion" width="35%">
+								</figure>
+								<h2>Salir</h2>
+							</center>
+						</div>
+					</a>
+
+				</div>
+			</article>
+		</main>
+	</body>
+
+</html>

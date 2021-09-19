@@ -1,0 +1,89 @@
+<!doctype html>
+{% load static%}
+	<html>
+	<head>
+	<meta charset="utf-8">
+	<title>Documento sin título</title>
+	<link rel="shortcut icon" href="{% static 'img/chaco.png' %}">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="{% static 'css/styles_nosotros.css' %}">
+	</head>
+
+	<header>
+		<center>
+			<ul>
+				<section style="padding-top:10px">
+					<a href="https://empleo.chaco.gob.ar/informatorio#/"><img src="{% static 'img/infoLogo.svg' %}" width="60vw" alt=""></a>
+				</section>
+				<div style="padding-left: 10px;display:inline-block">
+					<a href="{% url 'menu' %}">Menu</a>
+				</div>
+				<div style="padding-left: 10px;display:inline-block">
+					<a href="{% url 'jugar' %}">Jugar</a>
+				</div>
+				<div style="padding-left: 10px;display:inline-block">
+					<a href="{% url 'nosotros' %}">Nosotros</a>
+				</div>
+				<div style="padding-left: 10px;display:inline-block">
+					<a href="{% url 'logout' %}">Cerrar sesión</a>
+				</div>
+			</ul>
+		</center>
+	</header>
+
+	<body style="background-color: #C1CFC0;">
+		<div class="container d-flex justify-content-center">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="card p-3 py-4 mt-5 mb-5" style="box-shadow:0px 0px 15px royalblue;" >
+					<div class="text-center"> <img src="{% static 'img/perfil.png' %}" width="100" class="rounded-circle">
+						<h3 class="mt-2">Nicolás Dajruch</h3> <span class="mt-1 clearfix">Desarrollador Python</span> <small class="mt-4">Soy de Resistencia, actualmente estoy estudiando Ingenieria en sistemas.</small>
+							</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card p-3 py-4 mt-5" style="box-shadow:0px 0px 15px royalblue;" >
+					<div class="text-center"> <img src="{% static 'img/cristian_gomez.png' %}" width="100" class="rounded-circle">
+						<h3 class="mt-2">Cristian Exequiel Gomez</h3> <span class="mt-1 clearfix">Desarrollador Python</span> <small class="mt-4">Soy de Saenz Peña, actualmente estoy estudiando Profesorado de ingles.</small>
+						</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card p-3 py-4 mt-5" style="box-shadow:0px 0px 15px royalblue;" >
+					<div class="text-center"> <img src="{% static 'img/alexis_medina.jpg' %}" width="100" class="rounded-circle">
+						<h3 class="mt-2">Alexis Medina</h3> <span class="mt-1 clearfix">Desarrollador Python</span> <small class="mt-4">Me gustan las hamburguesas.</small>
+							</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<div class="container d-flex justify-content-center">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="card p-3 py-4 mt-5 mb-5" style="box-shadow:0px 0px 15px royalblue;" >
+					<div class="text-center"> <img src="{% static 'img/perfil.png' %}" width="100" class="rounded-circle">
+						<h3 class="mt-2">Emanuela Rios</h3> <span class="mt-1 clearfix">Desarrollador Python</span> <small class="mt-4">Soy de...,actualmente...</small>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card p-3 py-4 mt-5" style="box-shadow:0px 0px 15px royalblue;" >
+					<div class="text-center"> <img src="{% static 'img/brian_schulz.png' %}" width="100" class="rounded-circle">
+						<h3 class="mt-2">Brian Alexis Schulz</h3> <span class="mt-1 clearfix">Desarrollador Python</span> <small class="mt-4">Soy de Taco Pozo, actualmente desarrollo una actividad como monotributista.</small>
+						</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card p-3 py-4 mt-5" style="box-shadow:0px 0px 15px royalblue;" >
+					<div class="text-center"> <img src="{% static 'img/ethel.png' %}" width="100" class="rounded-circle">
+						<h3 class="mt-2">Ethel Vecchietti</h3> <span class="mt-1 clearfix">Desarrollador Python</span> <small class="mt-4">Soy de Saenz Peña, actualmente soy profesora.</small>
+							</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	</body>
+	</html>
